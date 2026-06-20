@@ -42,7 +42,7 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-0 hidden md:block">
         {techs.map((tech) => (
           <div
-            key={tech.label}
+            key={tech.label ?? tech.key}
             className="float-soft absolute"
             style={{
               top: tech.top,
@@ -52,7 +52,7 @@ export function Hero() {
             }}
           >
             <span className="glass rounded-full px-4 py-2 text-xs font-medium text-muted-foreground shadow-soft">
-              {tech.label}
+              {tech.label ?? t(tech.key!)}
             </span>
           </div>
         ))}
