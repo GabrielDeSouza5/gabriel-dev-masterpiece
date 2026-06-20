@@ -5,7 +5,9 @@ import { useEffect, useRef } from "react";
  * when they scroll into view. Returns a ref to attach to a container,
  * or observes the whole document body if no ref is attached.
  */
-export function useScrollReveal<T extends HTMLElement = HTMLDivElement>() {
+export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(
+  deps: unknown[] = [],
+) {
   const ref = useRef<T | null>(null);
 
   useEffect(() => {
