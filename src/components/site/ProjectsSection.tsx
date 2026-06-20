@@ -15,7 +15,7 @@ export function ProjectsSection() {
   const [imageMap, setImageMap] = useState<Record<string, string[]>>({});
   const [active, setActive] = useState<Project | null>(null);
   const [loaded, setLoaded] = useState(false);
-  const reveal = useScrollReveal<HTMLDivElement>();
+  const reveal = useScrollReveal<HTMLDivElement>([projects.length, loaded]);
 
   useEffect(() => {
     fetchPublishedProjects()
