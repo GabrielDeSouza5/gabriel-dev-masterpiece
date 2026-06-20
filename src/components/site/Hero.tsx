@@ -82,10 +82,10 @@ export function Hero() {
         <div className="mt-8 flex flex-wrap justify-center gap-2 md:hidden">
           {techs.map((tech) => (
             <span
-              key={tech.label}
+              key={tech.label ?? tech.key}
               className="glass rounded-full px-3 py-1.5 text-xs text-muted-foreground"
             >
-              {tech.label}
+              {tech.label ?? t(tech.key!)}
             </span>
           ))}
         </div>
