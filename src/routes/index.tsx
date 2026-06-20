@@ -1,29 +1,37 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import { Nav } from "@/components/site/Nav";
+import { Hero } from "@/components/site/Hero";
+import { BuildingNow } from "@/components/site/BuildingNow";
+import { About } from "@/components/site/About";
+import { Skills } from "@/components/site/Skills";
+import { ProjectsSection } from "@/components/site/ProjectsSection";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
-    meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
-    ],
+    links: [{ rel: "canonical", href: "/" }],
+    meta: [{ property: "og:url", content: "/" }],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  useScrollReveal();
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="relative min-h-screen overflow-x-hidden">
+      <Nav />
+      <main>
+        <Hero />
+        <BuildingNow />
+        <About />
+        <Skills />
+        <ProjectsSection />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
