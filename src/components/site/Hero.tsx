@@ -9,9 +9,10 @@ const techs = [
   { label: "N8N", top: "72%", left: "80%", delay: "0.6s" },
   { label: "UiPath", top: "12%", left: "68%", delay: "1.6s" },
   { label: "APIs", top: "82%", left: "30%", delay: "2.4s" },
-  { label: "Automação", top: "44%", left: "90%", delay: "0.3s" },
-  { label: "IA", top: "55%", left: "16%", delay: "1.8s" },
-];
+  { key: "skills.automation", top: "44%", left: "90%", delay: "0.3s" },
+  { key: "skills.ai", top: "55%", left: "16%", delay: "1.8s" },
+] as { label?: string; key?: string; top: string; left: string; delay: string }[];
+
 
 export function Hero() {
   const { t } = useI18n();
