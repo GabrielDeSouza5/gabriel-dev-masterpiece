@@ -17,41 +17,49 @@ const pt: Dict = {
   "nav.contact": "Contato",
   "nav.admin": "Admin",
 
-  "hero.welcome": "Bem-vindo ao meu portfólio",
+  "hero.welcome": "Python Software Developer",
   "hero.name": "Gabriel Dev",
-  "hero.role": "Desenvolvedor Backend & Automação",
-  "hero.cta": "Conhecer meu trabalho",
+  "hero.role":
+    "Gosto de transformar ideias e problemas em sistemas e ferramentas que realmente funcionam.",
+  "hero.cta": "Ver projetos",
   "hero.scroll": "Role para explorar",
 
   "building.label": "Building Now",
   "building.title": "Vellio",
   "building.text":
-    "Atualmente desenvolvendo o Vellio, uma plataforma que combina automação, inteligência artificial e integração de serviços para simplificar processos, conectar ferramentas e aumentar produtividade através de fluxos inteligentes.",
+    "Atualmente desenvolvendo o Vellio, uma plataforma criada para simplificar processos, conectar serviços e transformar fluxos complexos em ferramentas úteis.",
   "building.tag": "Em desenvolvimento",
 
   "about.label": "Sobre Mim",
-  "about.title": "Construindo produtos que escalam",
+  "about.title": "Ideias transformadas em software útil",
   "about.p1":
-    "Desenvolvedor focado em Backend, Automação e Inteligência Artificial. Meu trabalho consiste em projetar e desenvolver sistemas capazes de automatizar processos, integrar serviços e transformar ideias em produtos digitais escaláveis.",
+    "Sou desenvolvedor de software com foco em Python. Gosto de partir de uma ideia ou problema real e transformá-lo em um sistema ou ferramenta que funcione de forma clara e confiável.",
   "about.p2":
-    "Atualmente estou construindo soluções que combinam APIs, automação de workflows, agentes inteligentes e arquiteturas modernas para criar experiências eficientes e preparadas para crescimento.",
+    "Meu interesse está em construir aplicações, APIs e integrações que resolvam necessidades práticas, com atenção à estrutura do sistema e à experiência de quem vai utilizá-lo.",
   "about.p3":
-    "Tenho interesse especial por sistemas SaaS, integrações inteligentes e ferramentas que aumentam produtividade através da tecnologia.",
+    "Python é minha principal tecnologia. Outras ferramentas entram conforme a necessidade de cada projeto e do problema que precisa ser resolvido.",
   "about.p4":
-    "Mais do que escrever código, meu foco está em construir soluções que gerem impacto real e possam evoluir de forma sustentável ao longo do tempo.",
+    "Mais do que listar tecnologias, quero mostrar o que construo, por que cada projeto existe e como ele transforma uma ideia em algo útil.",
 
   "skills.label": "Skills",
-  "skills.title": "Stack & capacidades",
-  "skills.backend": "Backend",
-  "skills.automation": "Automação",
-  "skills.ai": "Inteligência Artificial",
+  "skills.title": "Tecnologias a serviço do projeto",
+  "skills.python": "Desenvolvimento Python",
+  "skills.systems": "Sistemas & APIs",
+  "skills.tools": "Ferramentas complementares",
+  "skills.item.database": "Banco de Dados",
+  "skills.item.softwareTools": "Ferramentas de software",
+  "skills.item.backendArchitecture": "Arquitetura Backend",
+  "skills.item.authentication": "Autenticação",
+  "skills.item.integrations": "Integrações",
 
   "projects.label": "Projetos",
-  "projects.title": "Trabalhos selecionados",
+  "projects.title": "Sistemas e ferramentas que construí",
+  "projects.subtitle":
+    "Projetos apresentados pelo que fazem, pelo problema que resolvem e pelas decisões usadas para construí-los.",
   "projects.empty": "Nenhum projeto publicado ainda.",
   "projects.view": "Ver detalhes",
   "projects.tech": "Tecnologias",
-  "projects.objectives": "Objetivos",
+  "projects.objectives": "Problema e objetivo",
   "projects.gallery": "Galeria",
   "projects.github": "GitHub",
   "projects.demo": "Demo",
@@ -69,7 +77,7 @@ const pt: Dict = {
   "contact.success": "Mensagem enviada. Retornarei em breve.",
   "contact.error": "Não foi possível enviar. Tente novamente.",
 
-  "footer.role": "Desenvolvedor Backend & Automação",
+  "footer.role": "Python Software Developer",
   "footer.rights": "Todos os direitos reservados.",
 
   "admin.title": "Painel administrativo",
@@ -113,41 +121,49 @@ const en: Dict = {
   "nav.contact": "Contact",
   "nav.admin": "Admin",
 
-  "hero.welcome": "Welcome to my portfolio",
+  "hero.welcome": "Python Software Developer",
   "hero.name": "Gabriel Dev",
-  "hero.role": "Backend & Automation Developer",
-  "hero.cta": "Explore my work",
+  "hero.role":
+    "I like turning ideas and problems into systems and tools that actually work.",
+  "hero.cta": "View projects",
   "hero.scroll": "Scroll to explore",
 
   "building.label": "Building Now",
   "building.title": "Vellio",
   "building.text":
-    "Currently building Vellio, a platform that combines automation, artificial intelligence and service integration to simplify processes, connect tools and increase productivity through intelligent workflows.",
+    "Currently building Vellio, a platform designed to simplify processes, connect services and turn complex workflows into useful tools.",
   "building.tag": "In development",
 
   "about.label": "About Me",
-  "about.title": "Building products that scale",
+  "about.title": "Turning ideas into useful software",
   "about.p1":
-    "Developer focused on Backend, Automation and Artificial Intelligence. My work consists of designing and developing systems capable of automating processes, integrating services and turning ideas into scalable digital products.",
+    "I'm a software developer focused on Python. I like starting with an idea or a real problem and turning it into a clear, reliable system or tool that works.",
   "about.p2":
-    "I'm currently building solutions that combine APIs, workflow automation, intelligent agents and modern architectures to create efficient experiences ready for growth.",
+    "I'm interested in building applications, APIs and integrations that solve practical needs, with attention to system structure and the experience of the people using it.",
   "about.p3":
-    "I have a particular interest in SaaS systems, intelligent integrations and tools that increase productivity through technology.",
+    "Python is my main technology. Other tools come in according to each project's needs and the problem that needs to be solved.",
   "about.p4":
-    "More than writing code, my focus is building solutions that generate real impact and can evolve sustainably over time.",
+    "Rather than listing technologies, I want to show what I build, why each project exists and how it turns an idea into something useful.",
 
   "skills.label": "Skills",
-  "skills.title": "Stack & capabilities",
-  "skills.backend": "Backend",
-  "skills.automation": "Automation",
-  "skills.ai": "Artificial Intelligence",
+  "skills.title": "Technology in service of the project",
+  "skills.python": "Python Development",
+  "skills.systems": "Systems & APIs",
+  "skills.tools": "Supporting tools",
+  "skills.item.database": "Databases",
+  "skills.item.softwareTools": "Software tools",
+  "skills.item.backendArchitecture": "Backend Architecture",
+  "skills.item.authentication": "Authentication",
+  "skills.item.integrations": "Integrations",
 
   "projects.label": "Projects",
-  "projects.title": "Selected work",
+  "projects.title": "Systems and tools I've built",
+  "projects.subtitle":
+    "Projects presented through what they do, the problem they solve and the choices used to build them.",
   "projects.empty": "No published projects yet.",
   "projects.view": "View details",
   "projects.tech": "Technologies",
-  "projects.objectives": "Objectives",
+  "projects.objectives": "Problem and objective",
   "projects.gallery": "Gallery",
   "projects.github": "GitHub",
   "projects.demo": "Demo",
@@ -165,7 +181,7 @@ const en: Dict = {
   "contact.success": "Message sent. I'll get back to you soon.",
   "contact.error": "Could not send. Please try again.",
 
-  "footer.role": "Backend & Automation Developer",
+  "footer.role": "Python Software Developer",
   "footer.rights": "All rights reserved.",
 
   "admin.title": "Admin panel",

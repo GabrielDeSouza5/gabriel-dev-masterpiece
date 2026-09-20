@@ -1,33 +1,31 @@
-import { Server, Workflow, BrainCircuit } from "lucide-react";
+import { Braces, Boxes, Wrench } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
 const groups = [
   {
-    icon: Server,
-    titleKey: "skills.backend",
+    icon: Braces,
+    titleKey: "skills.python",
     items: [
-      "Node.js",
-      "Express",
+      "Python",
       "APIs REST",
-      "Arquitetura Backend",
-      "Autenticação",
-      "Banco de Dados",
+      "skills.item.database",
+      "skills.item.softwareTools",
     ],
   },
   {
-    icon: Workflow,
-    titleKey: "skills.automation",
-    items: ["N8N", "UiPath", "Workflows", "Integrações"],
-  },
-  {
-    icon: BrainCircuit,
-    titleKey: "skills.ai",
+    icon: Boxes,
+    titleKey: "skills.systems",
     items: [
-      "Agentes Inteligentes",
-      "IA Generativa",
-      "Integrações com IA",
-      "Automação Inteligente",
+      "skills.item.backendArchitecture",
+      "skills.item.authentication",
+      "skills.item.integrations",
+      "APIs",
     ],
+  },
+  {
+    icon: Wrench,
+    titleKey: "skills.tools",
+    items: ["Node.js", "Express", "PostgreSQL", "JWT"],
   },
 ];
 
@@ -65,7 +63,7 @@ export function Skills() {
                       className="flex items-center gap-2.5 text-sm text-muted-foreground"
                     >
                       <span className="h-1 w-1 rounded-full bg-muted-foreground" />
-                      {item}
+                      {item.startsWith("skills.") ? t(item) : item}
                     </li>
                   ))}
                 </ul>

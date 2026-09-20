@@ -34,7 +34,7 @@ export function ProjectsSection() {
   }, []);
 
   return (
-    <section id="projects" ref={reveal} className="relative px-6 py-28">
+    <section id="projects" ref={reveal} className="relative border-y border-border bg-secondary/30 px-6 py-28">
       <div className="mx-auto max-w-6xl">
         <div className="reveal max-w-2xl">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
@@ -43,6 +43,9 @@ export function ProjectsSection() {
           <h2 className="mt-4 text-balance text-4xl font-bold sm:text-5xl">
             {t("projects.title")}
           </h2>
+          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+            {t("projects.subtitle")}
+          </p>
         </div>
 
         {loaded && projects.length === 0 ? (
