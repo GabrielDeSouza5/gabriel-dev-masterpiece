@@ -64,6 +64,15 @@ export function ProjectModal({
             </div>
           )}
 
+          <div className="mt-7">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+              {t("projects.role")}
+            </h3>
+            <p className="mt-2 leading-relaxed text-foreground/90">
+              {t("projects.roleValue")}
+            </p>
+          </div>
+
           {project.technologies.length > 0 && (
             <div className="mt-7">
               <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">

@@ -6,9 +6,7 @@ export function BuildingNow() {
   return (
     <section id="building" className="relative px-6 py-28">
       <div className="mx-auto max-w-5xl">
-        <div className="reveal hover-lift relative overflow-hidden rounded-3xl border border-border bg-card p-8 shadow-soft sm:p-14">
-          {/* glow */}
-          <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-foreground/[0.05] blur-[90px]" />
+        <div className="reveal hover-lift relative overflow-hidden rounded-2xl border border-border bg-card p-8 shadow-soft sm:p-14">
           <div className="relative">
             <div className="flex items-center gap-2.5">
               <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary text-primary-foreground">

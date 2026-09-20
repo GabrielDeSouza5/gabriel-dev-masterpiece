@@ -79,27 +79,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Gabriel Dev — Backend & Automation Developer" },
+      { title: "Gabriel Dev — Python Software Developer" },
       {
         name: "description",
         content:
-          "Gabriel Dev — Backend, Automation and AI developer building scalable systems, intelligent workflows and real digital products.",
+          "Gabriel Dev — Python Software Developer construindo sistemas, ferramentas e softwares úteis.",
       },
       { name: "author", content: "Gabriel Dev" },
-      { property: "og:title", content: "Gabriel Dev — Backend & Automation Developer" },
+      { property: "og:title", content: "Gabriel Dev — Python Software Developer" },
       {
         property: "og:description",
         content:
-          "Backend, Automation and AI developer building scalable systems and intelligent workflows.",
+          "Desenvolvedor Python focado em transformar ideias e problemas em sistemas que funcionam.",
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Gabriel Dev" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Gabriel Dev — Backend & Automation Developer" },
+      { name: "twitter:title", content: "Gabriel Dev — Python Software Developer" },
       {
         name: "twitter:description",
         content:
-          "Backend, Automation and AI developer building scalable systems and intelligent workflows.",
+          "Desenvolvedor Python construindo sistemas, ferramentas e software útil.",
       },
     ],
     links: [
@@ -122,8 +122,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@context": "https://schema.org",
           "@type": "Person",
           name: "Gabriel Dev",
-          jobTitle: "Backend & Automation Developer",
-          knowsAbout: ["Backend", "Automation", "Artificial Intelligence", "APIs"],
+          jobTitle: "Python Software Developer",
+          knowsAbout: ["Python", "Software Development", "Systems", "APIs"],
         }),
       },
     ],

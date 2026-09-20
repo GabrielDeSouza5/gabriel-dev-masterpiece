@@ -12,7 +12,22 @@ import { Footer } from "@/components/site/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     links: [{ rel: "canonical", href: "/" }],
-    meta: [{ property: "og:url", content: "/" }],
+    meta: [
+      { title: "Gabriel Dev — Python Software Developer" },
+      {
+        name: "description",
+        content:
+          "Portfólio de Gabriel Dev, desenvolvedor Python focado em transformar ideias e problemas em sistemas e ferramentas que funcionam.",
+      },
+      { property: "og:title", content: "Gabriel Dev — Python Software Developer" },
+      {
+        property: "og:description",
+        content: "Sistemas, ferramentas e software útil construídos principalmente com Python.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "/" },
+    ],
   }),
   component: Index,
 });
@@ -26,9 +41,9 @@ function Index() {
       <main>
         <Hero />
         <BuildingNow />
+        <ProjectsSection />
         <About />
         <Skills />
-        <ProjectsSection />
         <Contact />
       </main>
       <Footer />

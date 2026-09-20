@@ -1,33 +1,26 @@
-import { Server, Workflow, BrainCircuit } from "lucide-react";
+import { Braces, Boxes, Wrench } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
 const groups = [
   {
-    icon: Server,
-    titleKey: "skills.backend",
+    icon: Braces,
+    titleKey: "skills.python",
     items: [
-      "Node.js",
-      "Express",
+      "Python",
       "APIs REST",
-      "Arquitetura Backend",
-      "Autenticação",
       "Banco de Dados",
+      "Ferramentas de software",
     ],
   },
   {
-    icon: Workflow,
-    titleKey: "skills.automation",
-    items: ["N8N", "UiPath", "Workflows", "Integrações"],
+    icon: Boxes,
+    titleKey: "skills.systems",
+    items: ["Arquitetura Backend", "Autenticação", "Integrações", "APIs"],
   },
   {
-    icon: BrainCircuit,
-    titleKey: "skills.ai",
-    items: [
-      "Agentes Inteligentes",
-      "IA Generativa",
-      "Integrações com IA",
-      "Automação Inteligente",
-    ],
+    icon: Wrench,
+    titleKey: "skills.tools",
+    items: ["Node.js", "Express", "PostgreSQL", "JWT"],
   },
 ];
 
