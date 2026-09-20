@@ -27,6 +27,17 @@ export const Route = createFileRoute("/admin")({
   head: () => ({
     meta: [
       { title: "Admin — Gabriel Dev" },
+      {
+        name: "description",
+        content: "Área administrativa privada do portfólio Gabriel Dev.",
+      },
+      { property: "og:title", content: "Admin — Gabriel Dev" },
+      {
+        property: "og:description",
+        content: "Área administrativa privada do portfólio Gabriel Dev.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { name: "robots", content: "noindex, nofollow" },
     ],
   }),

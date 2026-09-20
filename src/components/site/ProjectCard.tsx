@@ -34,6 +34,18 @@ export function ProjectCard({
           <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">
             {project.short_description}
           </p>
+          {project.technologies.length > 0 && (
+            <div className="mt-4 flex flex-wrap gap-2">
+              {project.technologies.slice(0, 3).map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-full border border-border bg-secondary px-2.5 py-1 text-xs text-muted-foreground"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
         <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-border text-muted-foreground transition-all group-hover:bg-primary group-hover:text-primary-foreground">
           <ArrowUpRight className="h-4 w-4" />

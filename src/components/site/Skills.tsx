@@ -8,14 +8,19 @@ const groups = [
     items: [
       "Python",
       "APIs REST",
-      "Banco de Dados",
-      "Ferramentas de software",
+      "skills.item.database",
+      "skills.item.softwareTools",
     ],
   },
   {
     icon: Boxes,
     titleKey: "skills.systems",
-    items: ["Arquitetura Backend", "Autenticação", "Integrações", "APIs"],
+    items: [
+      "skills.item.backendArchitecture",
+      "skills.item.authentication",
+      "skills.item.integrations",
+      "APIs",
+    ],
   },
   {
     icon: Wrench,
@@ -58,7 +63,7 @@ export function Skills() {
                       className="flex items-center gap-2.5 text-sm text-muted-foreground"
                     >
                       <span className="h-1 w-1 rounded-full bg-muted-foreground" />
-                      {item}
+                      {item.startsWith("skills.") ? t(item) : item}
                     </li>
                   ))}
                 </ul>
